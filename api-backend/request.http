@@ -2,7 +2,7 @@
 //READ
 GET http://localhost:8765/hospitalDetails/get
 ###
-GET http://localhost:8765/hospitalDetails/get/status/Fever
+GET http://localhost:8765/hospitalDetails/get/status
 ###
 GET http://localhost:8765/hospitalDetails/get/diabetes/treatment
 ###
