@@ -1,0 +1,38 @@
+
+.body{
+    background-image: url('./img.jpg');
+}
+.form-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+
+    background-repeat: no-repeat;
+    
+
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
+.form-title {
+    color: #007bff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    flex: 0;
+}

@@ -1,0 +1,60 @@
+###
+GET http://localhost:8765/hospitalDetails/get
+###
+
+###
+GET http://localhost:8765/hospitalDetails/get/status/Discharge
+###
+
+###
+GET http://localhost:8765/hospitalDetails/get/diabetes/treatment
+###
+
+###
+GET http://localhost:8765/hospitalDetails/get/Fever/treatment(covid)
+###
+
+###
+GET http://localhost:8765/hospitalDetails/get/age/gt/40
+###
+
+
+
+
+###
+POST http://localhost:8765/hospitalDetails/post
+Content-Type: application/json
+
+{
+    "patientID": 0,
+    "patientName": "John Doe",
+    "patientAge": 30,
+    "patientBloodGroup": "A+",
+    "patientAddress": "123 Main St",
+    "patientContact": "1234567890",
+    "patientIssue": "Fever",
+    "patientStatus": "Under Treatment"
+}
+###
+
+
+
+
+
+###
+DELETE http://localhost:8765/hospitalDetails/delete/mohan
+###
+
+###
+DELETE http://localhost:8765/hospitalDetails/delete/Basker
+###
+
+
+###
+PUT http://localhost:8765/hospitalDetails/change/Fever/treatment(covid)
+###
+
+###
+PUT http://localhost:8765/hospitalDetails/updata/Fever/Covid
+###
+
