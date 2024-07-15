@@ -1,10 +1,11 @@
 require('./db');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
 const gopi = require('./schema');
 const route = express.Router();
-
+route.use(cors());
 route.use(bodyParser.urlencoded({ extended: true }));
 route.use(bodyParser.json());
 
@@ -76,6 +77,8 @@ route.post('/post', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
+
+
 
 // UPDATE
 route.put('/change/:issue/:status', async (req, res) => {
