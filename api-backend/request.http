@@ -1,42 +1,60 @@
-### 
-//READ
+###
 GET http://localhost:8765/hospitalDetails/get
 ###
-GET http://localhost:8765/hospitalDetails/get/status
+
+###
+GET http://localhost:8765/hospitalDetails/get/status/fever
+###
+
 ###
 GET http://localhost:8765/hospitalDetails/get/diabetes/treatment
 ###
-GET http://localhost:8765/hospitalDetails/get/Fever/treatment(covid)
-###
-//Age Filtering
-GET http://localhost:8765/hospitalDetails/get/age/gt/40
 
 ###
-///Create
+GET http://localhost:8765/hospitalDetails/get/Fever/treatment(covid)
+###
+
+###
+GET http://localhost:8765/hospitalDetails/get/age/gt/40
+###
+
+
+
+
+###
 POST http://localhost:8765/hospitalDetails/post
 Content-Type: application/json
 
 {
-    "patientID": 20,
-    "patientName": "Tushar",
-    "patientAge": 38,
-    "patientBloodGroup": "AB+",
-    "patientAddress": "Dindigul",
-    "patientContact": 7654901234,
-    "patientIssue": "Liver Disease",
-    "patientStatus": "Admitted"
+    "patientID": 0,
+    "patientName": "John Doe",
+    "patientAge": 30,
+    "patientBloodGroup": "A+",
+    "patientAddress": "123 Main St",
+    "patientContact": "1234567890",
+    "patientIssue": "Fever",
+    "patientStatus": "Under Treatment"
 }
- 
 ###
-//DELETE
+
+
+
+
+
+###
 DELETE http://localhost:8765/hospitalDetails/delete/mohan
 ###
 
+###
 DELETE http://localhost:8765/hospitalDetails/delete/Basker
 ###
 
-//UPDATA
+
+###
 PUT http://localhost:8765/hospitalDetails/change/Fever/treatment(covid)
+###
+
 ###
 PUT http://localhost:8765/hospitalDetails/updata/Fever/Covid
 ###
+
