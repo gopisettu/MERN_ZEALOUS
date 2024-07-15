@@ -1,9 +1,9 @@
 ###
-GET http://localhost:8765/hospitalDetails/get
+GET http://localhost:8765/hospitalDetails/get/status/treatment
 ###
 
 ###
-GET http://localhost:8765/hospitalDetails/get/status/fever
+GET http://localhost:8765/hospitalDetails/get/status/Discharge
 ###
 
 ###

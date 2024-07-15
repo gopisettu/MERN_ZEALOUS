@@ -18,14 +18,15 @@ route.get('/get', async (req, res) => {
     }
 });
 
-route.get('/get/status/:name', async (req, res) => {
+route.get('/get/status/:action', async (req, res) => {
     try {
-        const data = await gopi.find({ patientIssue: req.params.name });
+        const data = await gopi.find({ patientStatus: req.params.action });
         res.json(data);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
 });
+
 
 route.get('/get/:issue/:status', async (req, res) => {
     try {
